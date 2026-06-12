@@ -415,7 +415,7 @@ a { color: var(--navy); }
 }
 .practice-card svg { width: 40px; height: 40px; color: var(--red); margin-bottom: 18px; }
 .practice-card h3 { font-size: 1.35rem; margin-bottom: 10px; font-weight: 600; }
-.practice-card p { font-size: 1rem; color: var(--text-muted); margin-bottom: 16px; text-align: justify; }
+.practice-card p { font-size: 1rem; color: var(--text-muted); margin-bottom: 16px; }
 .practice-card .more {
   font-size: 0.78rem;
   letter-spacing: 0.18em;
@@ -599,6 +599,11 @@ a { color: var(--navy); }
 @media (max-width: 900px) {
   .intro-grid.flip .photo { order: 0; }
 }
+
+/* photo height locked to the text column beside it */
+.intro-grid.fit-photo { align-items: stretch; }
+.intro-grid.fit-photo .photo { align-self: stretch; }
+.intro-grid.fit-photo .photo img { height: 100%; width: 100%; object-fit: cover; }
 .intro-grid p { color: var(--text); margin-bottom: 18px; text-align: justify; }
 .intro-grid .btn { margin-top: 8px; }
 
