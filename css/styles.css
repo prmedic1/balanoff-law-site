@@ -415,7 +415,7 @@ a { color: var(--navy); }
 }
 .practice-card svg { width: 40px; height: 40px; color: var(--red); margin-bottom: 18px; }
 .practice-card h3 { font-size: 1.35rem; margin-bottom: 10px; font-weight: 600; }
-.practice-card p { font-size: 1rem; color: var(--text-muted); margin-bottom: 16px; }
+.practice-card p { font-size: 1rem; color: var(--text-muted); margin-bottom: 16px; text-align: justify; }
 .practice-card .more {
   font-size: 0.78rem;
   letter-spacing: 0.18em;
@@ -569,7 +569,7 @@ a { color: var(--navy); }
 .page-hero {
   background: var(--lavender);
   text-align: center;
-  padding: 56px 24px;
+  padding: 32px 24px;
 }
 .page-hero h1 {
   font-size: clamp(2.2rem, 4.2vw, 3.2rem);
@@ -595,7 +595,11 @@ a { color: var(--navy); }
 }
 .intro-grid .photo img { width: 100%; height: auto; display: block; }
 .intro-grid h2 { font-size: clamp(1.8rem, 2.8vw, 2.4rem); font-weight: 600; }
-.intro-grid p { color: var(--text); margin-bottom: 18px; }
+.intro-grid.flip .photo { order: 2; }
+@media (max-width: 900px) {
+  .intro-grid.flip .photo { order: 0; }
+}
+.intro-grid p { color: var(--text); margin-bottom: 18px; text-align: justify; }
 .intro-grid .btn { margin-top: 8px; }
 
 .doc-cards {
