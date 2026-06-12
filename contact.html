@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Dan Balanoff Attorney at Law | Chicago</title>
+  <meta name="description" content="Schedule a free consultation with Dan Balanoff, Attorney at Law. Call (312) 638-1600 or send us a message. 10100 S. Ewing Avenue, Chicago, IL 60617." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ════════ Top utility bar ════════ -->
+  <div class="topbar">
+    <div class="container">
+      <span class="tagline">Proudly serving Chicagoland families for over 60 years</span>
+      <span>Call today for a free consultation&ensp;<a href="tel:3126381600">(312) 638-1600</a></span>
+    </div>
+  </div>
+
+  <!-- ════════ Header ════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="Balanoff Law home">
+        <img src="assets/logo-full.png" alt="Dan Balanoff, Attorney at Law, shield logo" />
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown">
+            <a href="index.html#practice" aria-haspopup="true">Practice Areas</a>
+            <ul class="dropdown">
+              <li><a href="estate-planning.html">Estate Planning</a></li>
+              <li><a href="probate.html">Probate Administration</a></li>
+              <li><a href="real-estate.html">Real Estate</a></li>
+              <li><a href="bankruptcy.html">Consumer Bankruptcy</a></li>
+            </ul>
+          </li>
+          <li><a href="family-history.html">The Balanoff Family</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html" class="nav-cta">Free Consultation</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ════════ Page hero ════════ -->
+    <section class="page-hero">
+      <p class="kicker">We're Ready to Help</p>
+      <h1>Contact Us</h1>
+      <div class="rule center"></div>
+      <p class="lede">Tell us a little about your situation and we'll get back to you promptly. Every consultation is free, and there's never any pressure.</p>
+    </section>
+
+    <!-- ════════ Photo + details / intake form ════════ -->
+    <section class="section">
+      <div class="container intro-grid">
+        <div class="reveal">
+          <div class="photo">
+            <img src="assets/img/dan-omar.jpg" alt="Dan Balanoff talking with a client outside a Chicago building" />
+          </div>
+          <ul class="contact-details">
+            <li>
+              <span class="label">Phone</span>
+              <a href="tel:3126381600">(312) 638-1600</a>
+            </li>
+            <li>
+              <span class="label">Email</span>
+              <a href="mailto:ChicagoJustice@gmail.com">ChicagoJustice@gmail.com</a>
+            </li>
+            <li>
+              <span class="label">Office</span>
+              10100 S. Ewing Avenue, Chicago, IL 60617
+            </li>
+          </ul>
+        </div>
+
+        <div class="reveal">
+          <form class="intake-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <h2>Schedule Your Free Consultation</h2>
+            <p class="form-note">Fields marked <span class="req">*</span> are required.</p>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cf-name">Name <span class="req">*</span></label>
+                <input type="text" id="cf-name" name="name" required autocomplete="name" />
+              </div>
+              <div class="form-field">
+                <label for="cf-phone">Phone <span class="req">*</span></label>
+                <input type="tel" id="cf-phone" name="phone" required autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="cf-email">Email <span class="req">*</span></label>
+              <input type="email" id="cf-email" name="email" required autocomplete="email" />
+            </div>
+
+            <div class="form-field">
+              <label for="cf-area">How can we help? <span class="req">*</span></label>
+              <select id="cf-area" name="practice_area" required>
+                <option value="" selected disabled>Select an area of practice</option>
+                <option>Estate Planning</option>
+                <option>Probate Administration</option>
+                <option>Real Estate</option>
+                <option>Consumer Bankruptcy</option>
+                <option>Something Else</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="cf-message">Briefly describe your situation</label>
+              <textarea id="cf-message" name="message" placeholder="A sentence or two is plenty. Please don't include sensitive or confidential details here."></textarea>
+            </div>
+
+            <input type="hidden" name="_subject" value="New consultation request from BalanoffLaw.com" />
+            <button type="submit" class="btn btn-red">Send My Request</button>
+            <p class="privacy-note">Submitting this form does not create an attorney-client relationship. We'll only use your information to respond to your inquiry.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ CTA banner ════════ -->
+    <section class="cta-banner" style="background-image:url('assets/img/skyline-lp.jpg')">
+      <div class="cta-inner">
+        <p class="kicker">You're Better Off with Balanoff</p>
+        <h2><a href="tel:3126381600">(312) 638-1600</a></h2>
+      </div>
+    </section>
+  </main>
+
+  <!-- ════════ Footer ════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo-panel">
+            <img src="assets/logo-full.png" alt="Dan Balanoff, Attorney at Law" />
+          </div>
+          <p>Proudly serving Chicagoland families for over 60 years.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="estate-planning.html">Estate Planning</a></li>
+            <li><a href="probate.html">Probate Administration</a></li>
+            <li><a href="real-estate.html">Real Estate Transactions</a></li>
+            <li><a href="bankruptcy.html">Consumer Bankruptcy</a></li>
+            <li><a href="family-history.html">Balanoff Family History</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:3126381600" class="footer-phone">(312) 638-1600</a></li>
+            <li><a href="mailto:ChicagoJustice@gmail.com">ChicagoJustice@gmail.com</a></li>
+            <li><a href="https://www.BalanoffLaw.com">www.BalanoffLaw.com</a></li>
+            <li><address class="footer-address">10100 S. Ewing Avenue<br />Chicago, IL 60617</address></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-disclaimer">The information on this website is for general informational purposes only and is not legal advice. Viewing this website or contacting the firm does not create an attorney-client relationship. Attorney Advertising. Prior results do not guarantee similar outcomes.</p>
+        <p>© 2026 Dan Balanoff Attorney at Law. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
