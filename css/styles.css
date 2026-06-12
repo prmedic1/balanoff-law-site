@@ -600,10 +600,21 @@ a { color: var(--navy); }
   .intro-grid.flip .photo { order: 0; }
 }
 
-/* photo height locked to the text column beside it */
+/* photo height locked to the text column beside it (absolute so the
+   photo's intrinsic height can't stretch the row past the text) */
 .intro-grid.fit-photo { align-items: stretch; }
-.intro-grid.fit-photo .photo { align-self: stretch; }
-.intro-grid.fit-photo .photo img { height: 100%; width: 100%; object-fit: cover; }
+.intro-grid.fit-photo .photo { align-self: stretch; position: relative; }
+.intro-grid.fit-photo .photo img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 900px) {
+  .intro-grid.fit-photo .photo { position: static; }
+  .intro-grid.fit-photo .photo img { position: static; height: auto; }
+}
 .intro-grid p { color: var(--text); margin-bottom: 18px; text-align: justify; }
 .intro-grid .btn { margin-top: 8px; }
 
