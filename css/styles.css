@@ -720,6 +720,85 @@ a { color: var(--navy); }
   .doc-list { grid-template-columns: 1fr; }
 }
 
+/* ════════ Family history page ════════ */
+.member { scroll-margin-top: 100px; }
+.member-head { max-width: 760px; margin: 0 auto 40px; text-align: center; }
+.member-head .member-role {
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 10px;
+}
+.member-head h2 {
+  font-size: clamp(2rem, 3.4vw, 2.8rem);
+  font-weight: 600;
+}
+.member-head .tagline {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--navy);
+  margin-top: 6px;
+}
+
+/* responsive video player */
+.video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: var(--shadow-tile);
+}
+.video-frame video { width: 100%; height: 100%; object-fit: contain; background: #000; }
+.media-caption { font-size: 0.85rem; color: var(--text-muted); margin-top: 8px; text-align: center; }
+
+/* a row of supporting photos under a member's intro */
+.media-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 36px;
+}
+.media-row figure {
+  background: var(--white);
+  border: 1px solid var(--lavender);
+  box-shadow: var(--shadow-soft);
+}
+.media-row img { width: 100%; height: auto; display: block; }
+.media-row figcaption {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  padding: 10px 14px;
+  text-align: center;
+}
+
+/* the 1989 newspaper article scans */
+.article-scans {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 32px;
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-scans figure { box-shadow: var(--shadow-tile); border: 1px solid var(--lavender); }
+.article-scans img { width: 100%; height: auto; display: block; }
+.article-scans figcaption {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding: 8px 12px;
+  background: var(--white);
+  text-align: center;
+}
+@media (max-width: 720px) {
+  .article-scans { grid-template-columns: 1fr; }
+}
+
 /* ════════ Contact / intake form ════════ */
 .contact-details { list-style: none; margin-top: 24px; }
 .contact-details li { margin-bottom: 12px; font-size: 1.02rem; }

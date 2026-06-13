@@ -1,3 +1,6 @@
 # intermediate PDF renders and extraction scratch
 assets/extracted/
 tools/__pycache__/
+
+# large video files (host externally / via YouTube before deploy)
+assets/video/
