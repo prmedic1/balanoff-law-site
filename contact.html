@@ -83,9 +83,14 @@
         </div>
 
         <div class="reveal">
-          <form class="intake-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <form class="intake-form" action="https://formsubmit.co/ChicagoJustice@gmail.com" method="POST">
             <h2>Schedule Your Free Consultation</h2>
             <p class="form-note">Fields marked <span class="req">*</span> are required.</p>
+
+            <!-- FormSubmit settings: clean email format, no captcha, honeypot for spam -->
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
             <div class="form-row">
               <div class="form-field">
