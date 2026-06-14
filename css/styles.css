@@ -943,28 +943,18 @@ a { color: var(--navy); }
 @media (max-width: 720px) {
   .roots h2 { white-space: normal; }
 
-  /* hero: hide the busy train-map graphic and the logo glow/gleam on phones */
-  .hero-map { display: none; }
-  .hero-logo::before, .hero-logo::after { display: none; }
+  /* Keep the full desktop collage + moving train graphic on phones, just
+     scaled to fit. Shrink the title-tile text so it fits the smaller tile. */
+  .hero { padding: 16px 10px 8px; }
+  .tile-title { padding: 1% 1.4%; }
+  .tile-title .tile-line { font-size: 2.1vw; line-height: 1.15; }
+  .tile-title .tile-rule { width: 8vw; height: 2px; margin-top: 3px; }
 
   /* family page: stack the 3-up media rows and let captions wrap */
   .media-row { grid-template-columns: 1fr !important; }
   .media-row figcaption, .media-row .media-caption { white-space: normal; }
   .member .photo { flex-direction: column; align-items: center; }
 
-  /* simplified collage: title, headshot + logo, then photo grid */
-  .collage { aspect-ratio: auto; display: flex; flex-direction: column; gap: 14px; }
-  .tile, .hero-logo { position: static; }
-  .tile.flat { display: none; }
-  .tile-title { width: auto; height: auto; padding: 20px; order: 1; }
-  .headshot-wrap { position: relative; order: 2; }
-  .tile-headshot { width: 100%; }
-  .hero-logo {
-    position: absolute;
-    left: 4%; top: 30%; width: 56%;
-  }
-  .mobile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; order: 3; }
-  .mobile-grid .tile { position: static; width: auto; aspect-ratio: 4 / 3; }
   .topbar .tagline { display: none; }
   .practice-grid { grid-template-columns: 1fr; }
   .btn-ghost { margin-left: 0; margin-top: 12px; }
