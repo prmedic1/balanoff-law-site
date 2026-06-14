@@ -798,6 +798,13 @@ a { color: var(--navy); }
   padding: 10px 14px;
   text-align: center;
 }
+/* keep all gallery captions to a single line */
+.media-row figcaption,
+.media-row .media-caption {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /* the 1989 newspaper article scans */
 .article-scans {
