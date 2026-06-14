@@ -942,6 +942,16 @@ a { color: var(--navy); }
 
 @media (max-width: 720px) {
   .roots h2 { white-space: normal; }
+
+  /* hero: hide the busy train-map graphic and the logo glow/gleam on phones */
+  .hero-map { display: none; }
+  .hero-logo::before, .hero-logo::after { display: none; }
+
+  /* family page: stack the 3-up media rows and let captions wrap */
+  .media-row { grid-template-columns: 1fr !important; }
+  .media-row figcaption, .media-row .media-caption { white-space: normal; }
+  .member .photo { flex-direction: column; align-items: center; }
+
   /* simplified collage: title, headshot + logo, then photo grid */
   .collage { aspect-ratio: auto; display: flex; flex-direction: column; gap: 14px; }
   .tile, .hero-logo { position: static; }
