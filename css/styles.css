@@ -956,6 +956,10 @@ a { color: var(--navy); }
   .member .photo { flex-direction: column; align-items: center; }
 
   .topbar .tagline { display: none; }
+  /* keep the "Call today..." line on a single row on phones */
+  .topbar { font-size: 0.7rem; letter-spacing: 0.01em; }
+  .topbar .container { padding: 0 12px; gap: 6px; justify-content: center; }
+  .topbar .container span { white-space: nowrap; }
   .practice-grid { grid-template-columns: 1fr; }
   .btn-ghost { margin-left: 0; margin-top: 12px; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
