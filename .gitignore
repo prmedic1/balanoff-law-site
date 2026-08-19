@@ -3,4 +3,4 @@ assets/extracted/
 tools/__pycache__/
 
 # large video files (host externally / via YouTube before deploy)
-assets/video/
+assets/video/bob-interview.mov
